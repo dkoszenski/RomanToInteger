@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 class main {
     static void Main(string[] args) {
 
-        StringToArray input = new StringToArray("MMCCXXIV");
-        input.Convert();
+        string inputString = Console.ReadLine();
+        
+        RomanNumeralCalculator calc = new RomanNumeralCalculator();
 
-        int TotalValue = Calculate.Add(input.CharArray);
-        Console.WriteLine(TotalValue);
+        Console.WriteLine(calc.CalculateStringToInt(inputString));
+        
 
     }
 
